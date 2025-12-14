@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<title>Sahiplendirme İlanı Ver • Petunia</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2aa9e0">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script defer src="/assets/js/app.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">🐾</span>
+      <span class="brand-name">Petunia</span>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" data-nav>
+      <a href="/sahiplendirme/">Sahiplendirme</a>
+      <a href="/kayip-hayvanlar/">Kayıp Hayvanlar</a>
+      <a href="/bakim-rehberi/">Bakım Rehberi</a>
+      <a href="/bakici-bul/">Bakıcı Bul</a>
+      <a href="/topluluk/">Topluluk</a>
+      <a class="btn btn-ghost" href="/giris/">Giriş</a>
+      <a class="btn btn-primary" href="/kayit/">Kayıt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+<section class="container">
+  <div class="grid">
+    <div class="col-8">
+      <div class="card pad">
+        <h1 style="margin:0 0 8px;">➕ Sahiplendirme İlanı Ver</h1>
+        <p class="muted" style="margin:0 0 14px;">İlanın ne kadar netse, doğru eşleşme o kadar kolay olur.</p>
+
+        <form class="form">
+          <div class="split">
+            <div class="field">
+              <label>Tür</label>
+              <select><option>Kedi</option><option>Köpek</option><option>Diğer</option></select>
+            </div>
+            <div class="field">
+              <label>Adı</label>
+              <input placeholder="Mavi" />
+            </div>
+          </div>
+
+          <div class="split">
+            <div class="field">
+              <label>Yaş</label>
+              <input placeholder="2" />
+            </div>
+            <div class="field">
+              <label>Şehir/İlçe</label>
+              <input placeholder="İstanbul / Kadıköy" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Sağlık durumu (etiket)</label>
+            <select multiple>
+              <option>Aşılı</option>
+              <option>Kısır</option>
+              <option>İç/dış parazit</option>
+              <option>Acil</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Açıklama</label>
+            <textarea placeholder="Karakter, alışkanlıklar, ortam uyumu..."></textarea>
+          </div>
+
+          <div class="field">
+            <label>Sahiplendirme koşulları</label>
+            <textarea placeholder="Ev kontrolü, sözleşme, takip..."></textarea>
+          </div>
+
+          <div class="field">
+            <label>Fotoğraf</label>
+            <input type="file" />
+          </div>
+
+          <div class="field">
+            <label>İletişim e-postası</label>
+            <input type="email" placeholder="ornek@mail.com" />
+          </div>
+
+          <div class="field">
+            <label><input type="checkbox"> Kullanım koşullarını kabul ediyorum</label>
+          </div>
+
+          <button class="btn btn-primary" type="button">İlanı Yayınla (demo)</button>
+        </form>
+
+        <div class="todo"><strong>TODO:</strong> Görsel storage + ilan moderasyonu + “öne çıkar” (ileride) + spam/captcha.</div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card pad">
+        <h2>İpuçları</h2>
+        <ul class="muted">
+          <li>En az 3 fotoğraf ekle.</li>
+          <li>Aşı/kısır bilgisini açık yaz.</li>
+          <li>Koşulları net belirt.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span class="brand-name">Petunia</span>
+      </div>
+      <p class="muted">
+        Sahiplendirme, kayıp ilanları, bakım rehberi ve güvenli bakıcı bulma platformu.
+      </p>
+      <p class="tiny muted">© <span data-year></span> Petunia</p>
+    </div>
+
+    <div>
+      <h4>Keşfet</h4>
+      <ul>
+        <li><a href="/sahiplendirme/">Sahiplendirme</a></li>
+        <li><a href="/kayip-hayvanlar/">Kayıp Hayvanlar</a></li>
+        <li><a href="/bakim-rehberi/">Bakım Rehberi</a></li>
+        <li><a href="/bakici-bul/">Bakıcı Bul</a></li>
+        <li><a href="/topluluk/">Topluluk</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Kurumsal</h4>
+      <ul>
+        <li><a href="/hakkimizda/">Hakkımızda</a></li>
+        <li><a href="/iletisim/">İletişim</a></li>
+        <li><a href="/sss/">SSS</a></li>
+        <li><a href="/gizlilik-politikasi/">Gizlilik Politikası</a></li>
+        <li><a href="/cerez-politikasi/">Çerez Politikası</a></li>
+        <li><a href="/kullanim-kosullari/">Kullanım Koşulları</a></li>
+        <li><a href="/sikayet-bildir/">Şikayet & Bildirim</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/app.js"></script>
+
+</body>
+</html>

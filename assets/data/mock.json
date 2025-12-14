@@ -1,0 +1,112 @@
+{
+  "adoptions": [
+    {
+      "id": "mavi-1",
+      "name": "Mavi",
+      "type": "Kedi",
+      "age": "1",
+      "city": "İstanbul / Kadıköy",
+      "tags": [
+        "Aşılı"
+      ],
+      "status": "normal"
+    },
+    {
+      "id": "luna-2",
+      "name": "Luna",
+      "type": "Kedi",
+      "age": "3",
+      "city": "Ankara / Çankaya",
+      "tags": [
+        "Acil"
+      ],
+      "status": "urgent"
+    },
+    {
+      "id": "atlas-3",
+      "name": "Atlas",
+      "type": "Köpek",
+      "age": "2",
+      "city": "İzmir / Bornova",
+      "tags": [
+        "Kısır"
+      ],
+      "status": "normal"
+    }
+  ],
+  "lost": [
+    {
+      "id": "pati-1",
+      "name": "Pati",
+      "type": "Kedi",
+      "city": "İstanbul / Üsküdar",
+      "lostDate": "2025-12-10",
+      "status": "urgent"
+    },
+    {
+      "id": "karabas-2",
+      "name": "Karabaş",
+      "type": "Köpek",
+      "city": "Bursa / Nilüfer",
+      "lostDate": "2025-12-05",
+      "status": "normal"
+    }
+  ],
+  "guides": [
+    {
+      "id": "yavru-kedi-30-gun",
+      "title": "Yavru kedi ilk 30 gün bakım rehberi",
+      "category": "Kedi",
+      "readMins": 7
+    },
+    {
+      "id": "kopek-ayrilik-kaygisi",
+      "title": "Köpeklerde ayrılık kaygısı nasıl azaltılır?",
+      "category": "Köpek",
+      "readMins": 6
+    },
+    {
+      "id": "kedi-beslenme-temelleri",
+      "title": "Kedi beslenme temelleri: mama seçimi ve porsiyon",
+      "category": "Beslenme",
+      "readMins": 8
+    }
+  ],
+  "sitters": [
+    {
+      "id": "deniz-1",
+      "name": "Deniz",
+      "city": "İstanbul",
+      "services": [
+        "Gezdirme",
+        "Günlük Ziyaret"
+      ],
+      "rating": 4.8,
+      "reviews": 24
+    },
+    {
+      "id": "asya-2",
+      "name": "Asya",
+      "city": "Ankara",
+      "services": [
+        "Evde Bakım"
+      ],
+      "rating": 4.6,
+      "reviews": 11
+    }
+  ],
+  "community": [
+    {
+      "id": "kedim-yemek-yemiyor",
+      "title": "Kedim yemek yemiyor, ne yapmalıyım?",
+      "category": "Bakım",
+      "replies": 12
+    },
+    {
+      "id": "kayip-kedi-paylasim",
+      "title": "Kadıköy civarı kayıp kedi ilanı paylaşımı",
+      "category": "Kayıp",
+      "replies": 7
+    }
+  ]
+}

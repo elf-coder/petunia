@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<title>Ana Sayfa • Petunia</title>
+<meta name="description" content="Petunia: sahiplendirme, kayıp hayvan ilanları, bakım rehberi ve bakıcı bulma.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2aa9e0">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script defer src="/assets/js/app.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">🐾</span>
+      <span class="brand-name">Petunia</span>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" data-nav>
+      <a href="/sahiplendirme/">Sahiplendirme</a>
+      <a href="/kayip-hayvanlar/">Kayıp Hayvanlar</a>
+      <a href="/bakim-rehberi/">Bakım Rehberi</a>
+      <a href="/bakici-bul/">Bakıcı Bul</a>
+      <a href="/topluluk/">Topluluk</a>
+      <a class="btn btn-ghost" href="/giris/">Giriş</a>
+      <a class="btn btn-primary" href="/kayit/">Kayıt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="card pad">
+      <h1 class="h1">Sahiplen, kaybı bul, bakım öğren; hepsi Petunia’da.</h1>
+      <p class="lead">Sahiplendirme ilanları, kayıp hayvan duyuruları, bakım rehberleri ve güvenli bakıcı bulma.</p>
+
+      <div class="pills">
+        <a class="btn btn-primary" href="/sahiplendirme/">🐶 Sahiplendirme</a>
+        <a class="btn btn-ghost" href="/kayip-hayvanlar/">🔴 Kayıp Hayvanlar</a>
+        <a class="btn btn-ghost" href="/bakim-rehberi/">📘 Bakım Rehberi</a>
+      </div>
+
+      <div class="section">
+        <div class="notice info">
+          <strong>Hızlı Başla:</strong> “Kayıp ilanı ver” ile paylaş, “Bulundu bildir” ile ilanı kapat.
+        </div>
+      </div>
+    </div>
+
+    <aside class="card pad">
+      <h2 style="margin:0 0 10px;">Hızlı Arama</h2>
+      <form class="form" action="/arama/">
+        <div class="field">
+          <label for="q">Ne arıyorsun?</label>
+          <input id="q" name="q" placeholder="kedi, köpek, bakıcı, rehber..." />
+        </div>
+        <div class="split">
+          <div class="field">
+            <label for="city">Şehir</label>
+            <select id="city" name="city">
+              <option value="">Hepsi</option>
+              <option>İstanbul</option>
+              <option>Ankara</option>
+              <option>İzmir</option>
+              <option>Bursa</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="module">Alan</label>
+            <select id="module" name="module">
+              <option value="">Hepsi</option>
+              <option value="sahiplendirme">Sahiplendirme</option>
+              <option value="kayip">Kayıp</option>
+              <option value="bakici">Bakıcı</option>
+              <option value="rehber">Rehber</option>
+              <option value="topluluk">Topluluk</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Ara</button>
+        <div class="todo">
+          <strong>TODO:</strong> Arama sonuçlarını gerçek veriye bağla (Supabase/DB). Şimdilik sayfa iskeleti var.
+        </div>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid">
+    <div class="col-8">
+      <div class="card pad">
+        <h2>Öne Çıkanlar</h2>
+        <div class="list">
+          <div class="card item">
+            <div class="item-head">
+              <div>
+                <div class="item-title">Luna • Kedi • Ankara / Çankaya</div>
+                <div class="item-meta">Acil sahiplendirme • 3 yaş</div>
+              </div>
+              <span class="badge danger">ACİL</span>
+            </div>
+            <a class="btn btn-ghost" href="/ilan/luna-2/">İlana git</a>
+          </div>
+
+          <div class="card item">
+            <div class="item-head">
+              <div>
+                <div class="item-title">Pati • Kayıp Kedi • İstanbul / Üsküdar</div>
+                <div class="item-meta">Son görülen: 2025-12-10</div>
+              </div>
+              <span class="badge danger">SON 72 SAAT</span>
+            </div>
+            <a class="btn btn-ghost" href="/kayip-hayvanlar/pati-1/">Detaya git</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="col-4">
+  <div class="card pad">
+    <h2>Nasıl Çalışır?</h2>
+
+    <div class="kpi">
+      <div class="card k">
+        <div class="badge">1</div>
+        <div class="k-text">
+          <div class="k-title">İlan ver</div>
+          <div class="muted k-desc">Kayıp veya sahiplendirme ilanı oluştur.</div>
+        </div>
+      </div>
+
+      <div class="card k">
+        <div class="badge">2</div>
+        <div class="k-text">
+          <div class="k-title">Güvenli iletişim</div>
+          <div class="muted k-desc">Telefonu gizle, form üzerinden mesaj al.</div>
+        </div>
+      </div>
+
+      <div class="card k">
+        <div class="badge">3</div>
+        <div class="k-text">
+          <div class="k-title">Sonuç Al</div>
+          <div class="muted k-desc">Bulundu / Sahiplenildi: ilanı kapat, arşivle.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="notice warn">
+        <strong>...</strong>...
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span class="brand-name">Petunia</span>
+      </div>
+      <p class="muted">
+        Sahiplendirme, kayıp ilanları, bakım rehberi ve güvenli bakıcı bulma platformu.
+      </p>
+      <p class="tiny muted">© <span data-year></span> Petunia</p>
+    </div>
+
+    <div>
+      <h4>Keşfet</h4>
+      <ul>
+        <li><a href="/sahiplendirme/">Sahiplendirme</a></li>
+        <li><a href="/kayip-hayvanlar/">Kayıp Hayvanlar</a></li>
+        <li><a href="/bakim-rehberi/">Bakım Rehberi</a></li>
+        <li><a href="/bakici-bul/">Bakıcı Bul</a></li>
+        <li><a href="/topluluk/">Topluluk</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Kurumsal</h4>
+      <ul>
+        <li><a href="/hakkimizda/">Hakkımızda</a></li>
+        <li><a href="/iletisim/">İletişim</a></li>
+        <li><a href="/sss/">SSS</a></li>
+        <li><a href="/gizlilik-politikasi/">Gizlilik Politikası</a></li>
+        <li><a href="/cerez-politikasi/">Çerez Politikası</a></li>
+        <li><a href="/kullanim-kosullari/">Kullanım Koşulları</a></li>
+        <li><a href="/sikayet-bildir/">Şikayet & Bildirim</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/js/app.js"></script>
+
+</body>
+</html>
